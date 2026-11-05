@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+<!-- Error 1: Check DOCTYPE, line 1 -->
+<!-- Error 2: Table row and cell structure -->
+<!-- Error 3: Wrong colspan in table -->
+<!-- Error 4: Radio buttons must use the same name -->
+<!-- Error 5: Labels need matching id -->
+<!-- Error 6: Add email, checkbox and select -->
+<!-- Error 7: Add Student Comments section -->
+
+<header>
+    <h1>CSF3133 Course Feedback</h1>
+</header>
+
+<nav>
+    <a href="#results">Results</a> |
+    <a href="#form">Feedback Form</a> |
+    <a href="#comments">Student Comments</a>
+</nav>
+
+<section id="results">
+    <h2>Feedback Summary</h2>
+
+    <table border="1">
+        <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Introduction to HTML</td>
+            <td>4.5</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Tables and Forms</td>
+            <td>4.0</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Semantic HTML</td>
+            <td>4.6</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td rowspan="2">Mini Project</td>
+            <td>4.7</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>4.8</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Average Rating</td>
+            <td>4.52</td>
+        </tr>
+    </table>
+</section>
+
+<section id="form">
+    <h2>Give Your Feedback</h2>
+
+    <form action="submit_feedback.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <p>Overall Rating:</p>
+
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label>
+
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label>
+        <br><br>
+
+        <p>Topics I want more practice on:</p>
+
+        <input type="checkbox" id="html" name="topics[]" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="tables" name="topics[]" value="Tables">
+        <label for="tables">Tables</label>
+
+        <input type="checkbox" id="forms" name="topics[]" value="Forms">
+        <label for="forms">Forms</label>
+        <br><br>
+
+        <label for="group">Section/Group:</label>
+
+        <select id="group" name="group">
+            <option value="A">Group A</option>
+            <option value="B">Group B</option>
+            <option value="C">Group C</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</section>
+
+<section id="comments">
+    <h2>Student Comments</h2>
+
+    <article>
+        <h3>FARIH</h3>
+        <p>The HTML lessons are easy to understand.</p>
+    </article>
+
+    <article>
+        <h3>ZEMS</h3>
+        <p>I want more practice with tables and forms.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+
+</body>
+</html>
