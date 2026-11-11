@@ -1,0 +1,174 @@
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F5F0E6;
+    margin: 0;
+    color: #333;
+}
+
+/* Header */
+
+header{
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+
+nav{
+    background-color: #800020;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Link States */
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: #FFDAB9;
+}
+
+a:hover{
+    background-color: #5A0015;
+}
+
+a:active{
+    color: yellow;
+}
+
+/* Section */
+
+section{
+    background-color: #FFF8F0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ID Selectors */
+
+#destinations{
+    border-left: 5px solid #800020;
+}
+
+#video{
+    border-left: 5px solid #800020;
+}
+
+/* Class Selectors */
+
+.card{
+    background-color: #FFF8F0;
+    padding: 15px;
+    border: 1px solid #800020;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.price{
+    color: green;
+    font-weight: bold;
+}
+
+.old-price{
+    color: red;
+    text-decoration: line-through;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Video */
+
+video{
+    width: 90%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.caption{
+    text-align: center;
+    font-style: italic;
+}
+
+/* Form */
+
+.trip-form{
+    background-color: #FFF8F0;
+    border: 2px solid #800020;
+    padding: 20px;
+    width: 90%;
+}
+
+input[type=text],
+input[type=email]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=submit]{
+    background-color: #800020;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #5A0015;
+}
+
+/* Footer */
+
+footer{
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a{
+    color: #FFDAB9;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:768px){
+
+    nav ul li{
+        display: block;
+    }
+
+    video{
+        width: 100%;
+    }
+
+    .trip-form{
+        width: 100%;
+    }
+
+}
