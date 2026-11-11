@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Exercise 4</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h2{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Surfing Club Website</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#article">Article</a></li>
+        <li><a href="#form">Form</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>This is my responsive web page for Lab Exercise 4.</p>
+</section>
+
+<section id="video">
+    <h2>Video</h2>
+
+    <video width="500" controls>
+        <source src="SURFING VIDEO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p><em>Figure 1: Surfing Video</em></p>
+</section>
+
+<section id="article">
+    <article>
+        <h2>Article</h2>
+        <p>
+            HTML5 provides semantic elements such as header,
+            nav, section, article and footer. CSS is used
+            to style and beautify the web page.
+        </p>
+    </article>
+</section>
+
+<section id="form">
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <p>Gender:</p>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <p>Surfing skill level:</p>
+
+        <input type="checkbox"> No Basic
+        <input type="checkbox"> Basic
+        <input type="checkbox"> Pro
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Farih Irfan</p>
+</footer>
+
+</body>
+</html>
