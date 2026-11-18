@@ -1,0 +1,204 @@
+/* Base Settings & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f0f9ff;
+    color: #1e293b;
+    line-height: 1.8;
+}
+
+/* Header with Ocean Gradient & Centered White Text */
+header {
+    background: linear-gradient(120deg, #0077b6 0%, #00b4d8 55%, #ff9f1c 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+header p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #023e8a;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(2, 62, 138, 0.15);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #ff9f1c;
+    color: #023e8a;
+}
+
+/* Main Layout Container */
+.main-container {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Content Cards */
+.card {
+    background-color: #ffffff;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 119, 182, 0.08);
+    border-left: 6px solid #00b4d8;
+}
+
+#faculties {
+    border-left-color: #ff9f1c;
+}
+
+#contact {
+    border-left-color: #ff6b6b;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: #023e8a;
+    font-size: 24px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #caf0f8;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 16px;
+    color: #334155;
+    font-size: 15px;
+}
+
+/* Styled Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0f2fe;
+}
+
+th {
+    background-color: #0077b6;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Faculty Code Badge */
+.badge {
+    background-color: #ffedd5;
+    color: #c2410c;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Alternating Row Colors & Hover */
+tbody tr:nth-child(even) {
+    background-color: #f0f9ff;
+}
+
+tbody tr:hover {
+    background-color: #fef3c7;
+    transition: background-color 0.25s ease;
+}
+
+/* Contact Section Link */
+.contact-card a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact-card a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+/* Footer (White text & Centered) */
+footer {
+    background: linear-gradient(90deg, #023e8a 0%, #0077b6 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
