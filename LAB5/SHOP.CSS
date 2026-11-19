@@ -1,0 +1,113 @@
+
+body{
+    margin:0;
+    font-family:'Roboto', sans-serif;
+    background-image:url("paper.gif");
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-color:#F8F8F8;
+    color:#333;
+}
+
+header{
+    background-image:url("CAMPUSBOOK.jpg");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    color:white;
+    padding:100px 20px;
+}
+
+header h1{
+    font-family:'Merriweather', serif;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav{
+    background-color:#333;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    display:flex;
+    justify-content:center;
+}
+
+nav li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    font-weight:bold;
+}
+
+nav li a:hover{
+    background-color:#111;
+}
+
+.active{
+    background-color:#04AA6D;
+}
+
+main{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+h2{
+    color:#1B4F72;
+    font-family:'Merriweather', serif;
+}
+
+p{
+    line-height:1.6;
+}
+
+#product{
+    border-collapse:collapse;
+    width:100%;
+}
+
+#product td,
+#product th{
+    border:1px solid #ddd;
+    padding:8px;
+}
+
+#product tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+#product tr:hover{
+    background-color:#ddd;
+}
+
+#product th{
+    background-color:#04AA6D;
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+.price{
+    text-align:right;
+}
+
+footer{
+    background-color:#f1f1f1;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
