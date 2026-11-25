@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Application</title>
+    <link rel="stylesheet" href="Lab6.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Header introducing the quiz -->
+        <header>
+            <h1>Dynamic Quiz Application</h1>
+            <p>Answer each question before the timer runs out.</p>
+        </header>
+
+        <main>
+            <!-- Section to display timer, question, and answer options -->
+            <section id="quiz-section">
+                <div class="quiz-info">
+                    <span id="question-number">Question 1 of 5</span>
+                    <span id="timer">Time: 15s</span>
+                </div>
+
+                <h2 id="question-text">Loading question...</h2>
+
+                <div id="options-container" class="options-list"></div>
+            </section>
+
+            <!-- Section to show feedback (correct/incorrect) after each answer -->
+            <section id="feedback-section" class="feedback hidden" aria-live="polite">
+                <p id="feedback-message"></p>
+            </section>
+
+            <!-- Buttons to submit answers and navigate between questions -->
+            <section class="button-group">
+                <button type="button" id="submit-btn" onclick="checkAnswer()" disabled>Submit Answer</button>
+                <button type="button" id="next-btn" onclick="nextQuestion()" class="hidden">Next Question</button>
+                <button type="button" id="restart-btn" onclick="startQuiz()" class="hidden">Restart Quiz</button>
+            </section>
+        </main>
+
+        <!-- Footer to display the user's score -->
+        <footer>
+            <p id="score-text">Score: 0 / 5</p>
+        </footer>
+    </div>
+
+    <script src="Lab6.js"></script>
+</body>
+</html>
