@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Arena</title>
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="lab6_ExerA.css">
+    <!-- Link Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header with game title and instruction -->
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Enter your name, click 'Start Game', then choose your move.</p>
+    </header>
+
+    <main>
+        <!-- Player Setup Panel -->
+        <section class="card player-setup">
+            <div class="input-group">
+                <label for="playerName">Your Name:</label>
+                <input type="text" id="playerName" placeholder="e.g. Ali">
+            </div>
+            <button type="button" class="btn-start" onclick="startGame()">Start Game</button>
+            <p id="welcomeMessage" class="welcome-text"></p>
+        </section>
+
+        <!-- Game Arena Panel -->
+        <section class="card game-arena">
+            <div class="choice-controls">
+                <h2>Make Your Choice</h2>
+                <div class="button-row">
+                    <button type="button" class="btn-choice" onclick="playRound('rock')">Rock</button>
+                    <button type="button" class="btn-choice" onclick="playRound('paper')">Paper</button>
+                    <button type="button" class="btn-choice" onclick="playRound('scissors')">Scissors</button>
+                </div>
+            </div>
+
+            <div class="battle-display">
+                <div class="fighter-side">
+                    <h3>You</h3>
+                    <img id="playerImg" src="ferrari.jpg" alt="Player Choice" class="choice-img">
+                </div>
+                <div class="vs-divider">VS</div>
+                <div class="fighter-side">
+                    <h3>Computer</h3>
+                    <img id="computerImg" src="petronas.jpg" alt="Computer Choice" class="choice-img">
+                </div>
+            </div>
+
+            <div class="result-display">
+                <p id="result" class="result-text"></p>
+            </div>
+        </section>
+
+        <!-- Scoreboard & History Panel -->
+        <section class="card info-panel">
+            <div class="scoreboard">
+                <div class="score-box win">Wins: <span id="wins">0</span></div>
+                <div class="score-box lose">Losses: <span id="losses">0</span></div>
+                <div class="score-box draw">Draws: <span id="draws">0</span></div>
+            </div>
+
+            <div class="history-container">
+                <h2>History</h2>
+                <table id="history" class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Round</th>
+                            <th>You</th>
+                            <th>Computer</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody"></tbody>
+                </table>
+            </div>
+
+            <div class="control-buttons">
+                <button type="button" class="btn-secondary" onclick="showSummary()">Show Summary</button>
+                <button type="button" class="btn-reset" onclick="resetGame()">Reset Game</button>
+            </div>
+            <p id="summaryText" class="summary-text"></p>
+        </section>
+    </main>
+
+    <!-- Footer with timestamp and copyright -->
+    <footer>
+        <p id="startTime" class="timestamp"></p>
+        <p>&copy; 2026 Computer Science Club</p>
+    </footer>
+
+    <!-- Link external JavaScript file -->
+    <script src="lab6_ExerA.js"></script>
+</body>
+</html>
